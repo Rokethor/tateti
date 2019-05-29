@@ -1,0 +1,9 @@
+******************************* IMPORTANTE *******************************
+
+Es requerimiento ESENCIAL tener instalado en tu máquina Python 3.x
+
+El juego utiliza dos librerías que vienen instaladas con el paquete de
+Python, las cuales son: random y copy
+
+Los test utilizan otra librería que viene instalada con el paquete de
+Python: unittest
