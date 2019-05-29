@@ -6,4 +6,4 @@ El juego utiliza dos librerías que vienen instaladas con el paquete de
 Python, las cuales son: random y copy
 
 Los test utilizan otra librería que viene instalada con el paquete de
-Python: unittest
+Python: unittest, además de la librería random.
