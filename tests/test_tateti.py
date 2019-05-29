@@ -14,10 +14,6 @@ class TestTateti(unittest.TestCase):
         self.assertEqual(True, self.tateti.inProgress)
         self.assertIn(self.tateti.turn, (0, 1))
 
-    def test_random_turn(self):
-        for i in range(100):
-            self.assertIn(self.tateti.randomStart(), (0, 1))
-
     def test_len_table(self):
         self.assertEqual(330, len(self.tateti.getTableStr([' '] * 10)))
 
@@ -44,7 +40,7 @@ class TestTateti(unittest.TestCase):
             ['', 'X', '', 'O', 'X', 'O', '', '', '', ''],
         ]
         letters = ['X', 'O']
-        randomInt = self.tateti.randomStart()
+        randomInt = random.randint(0, 1)
         computerLetter = letters[randomInt]
         playerLetter = letters[int(not randomInt)]
         for table in tables:

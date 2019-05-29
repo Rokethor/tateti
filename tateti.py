@@ -21,7 +21,7 @@ class Tateti:
 
     def __init__(self):
         self.inProgress = True
-        self.turn = self.randomStart()
+        self.turn = random.randint(0, 1)
 
     def play(self):
         print('¡Jugate un Ta-Te-Ti!')
@@ -92,13 +92,6 @@ class Tateti:
             print('¿Deseas ser X o O?')
             letter = input().upper()
         return ['X', 'O'] if letter == 'X' else ['O', 'X']
-
-    def randomStart(self):
-        """
-            Retorna:
-                1 - Un número al azar entre 0 y 1.
-        """
-        return random.randint(0, 1)
 
     def getPlayerMove(self, table):
         """
